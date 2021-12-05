@@ -10,11 +10,13 @@
 
 :root {
   --card-main-bg: #f1f3fa;
+  --card-main-bg-hover: #e1e4f0;
   --main-text-color: #1d1f29;
   --green: #1eb589;
   --light-purple: #8c98c6;
   --red1: #dc414c;
   --fb-blue: #178ff5;
+  --gray: rgb(145, 145, 145);
 }
 
 /* BEFORE BORDER FB BLUE #178FF5 */
@@ -35,6 +37,7 @@ body {
 }
 
 body.dark {
+  --card-main-bg-hover: #333a55;
   --main-text-color: #fff;
   --card-main-bg: #252b42;
 }
@@ -63,6 +66,12 @@ html {
   flex-direction: column;
   gap: 20px;
   position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.main-card:hover {
+  background-color: var(--card-main-bg-hover);
 }
 
 .main-card::before {
@@ -101,7 +110,7 @@ a {
 }
 
 .follower-text {
-  color: gray;
+  color: var(--gray);
   font-weight: 300;
   letter-spacing: 3px;
   font-size: 14px;
@@ -109,7 +118,11 @@ a {
 
 .social-icon-text {
   font-size: 13px;
-  color: gray;
+  color: var(--gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .social-icon {
