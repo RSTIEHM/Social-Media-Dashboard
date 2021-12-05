@@ -1,3 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --card-main-bg: #f1f3fa;
+  --main-text-color: #1d1f29;
+  --green: #1eb589;
+  --light-purple: #8c98c6;
+  --red1: #dc414c;
+  --fb-blue: #178ff5;
+}
+
+/* BEFORE BORDER FB BLUE #178FF5 */
+/* BEFORE BORDER YT RED #C4032B */
+/* BEFORE BORDER INSTAD GRADIENT #DF4896 -> #EE877E -> #FDC366 */
+/* TOGGLE DARK GRADIENET #40DB82 -> #388FE7 */
+/* light card hover #E1E4F0 */
+/* light toggle container bg F7F9FF */
+/* dark card hover #333A55 */
+/* dark toggle container bg #20222F */
+
 body {
-  background: orange;
+  color: var(--main-text-color);
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+}
+
+body.dark {
+  --main-text-color: #fff;
+  --card-main-bg: #252b42;
+}
+
+html {
+  font-size: 100%;
+}
+
+.main-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.041);
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.main-card {
+  padding: 1.5rem 0;
+  border-radius: 5px;
+  background-color: var(--card-main-bg);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+.main-card::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 5px;
+  background: #f5ba17;
+  top: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.main-card.fb::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 5px;
+  background: #178ff5;
+  top: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+.follower-total {
+  font-size: 60px;
+  color: var(--main-text-color);
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1;
+}
+
+.follower-text {
+  color: gray;
+  font-weight: 300;
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+
+.social-icon-text {
+  font-size: 13px;
+  color: gray;
+}
+
+.social-icon {
+  font-size: 25px;
+}
+
+.fb {
+  color: var(--fb-blue);
+}
+
+.daily-total {
+  font-size: 14px;
+}
+
+.inc {
+  color: var(--green);
 }
