@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Social Dashboard</title>
-    <script src="script.js"></script>
+
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -14,59 +14,191 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body class="">
-    <div class="main-container">
-      <div class="main-card fb">
-        <div class="social-handle">
-          <span class="social-icon-text">
-            <i class="fab fa-facebook-square social-icon fb-social"></i>
-            @handlefr
-          </span>
+    <div class="site-wrapper-full">
+      <div class="site-toggle-conatiner">
+        <div class="site-logo-container">
+          <h1 class="site-logo-title">Social Media Dashboard</h1>
+          <p class="site-logo-total-followers">Total Followers: 23,456</p>
         </div>
-        <div class="follower-container">
-          <h2 class="follower-total">8239</h2>
-          <h3 class="follower-text">FOLLOWERS</h3>
+        <div class="toggle-container">
+          <p class="toggle-text">Dark Mode</p>
+          <input
+            class="toggler"
+            id="slider"
+            type="range"
+            min="0"
+            max="100"
+            step="100"
+            start="0"
+          />
         </div>
-        <h4 class="daily-total inc">12 Today</h4>
       </div>
-      <div class="main-card fb">
-        <div class="social-handle">
-          <span class="social-icon-text">
-            <i class="fab fa-facebook-square social-icon fb-social"></i>
-            @handlefr
-          </span>
+      <div class="grid-container">
+        <div class="main-card fb">
+          <div class="social-handle">
+            <span class="social-icon-text">
+              <i class="fab fa-facebook-square social-icon fb-social"></i>
+              @handlefr
+            </span>
+          </div>
+          <div class="follower-container">
+            <h2 class="follower-total">8239</h2>
+            <h3 class="follower-text">FOLLOWERS</h3>
+          </div>
+          <h4 class="daily-total inc">
+            <i class="fas fa-caret-up"></i> 12 Today
+          </h4>
         </div>
-        <div class="follower-container">
-          <h2 class="follower-total">8239</h2>
-          <h3 class="follower-text">FOLLOWERS</h3>
+        <div class="main-card fb">
+          <div class="social-handle">
+            <span class="social-icon-text">
+              <i class="fab fa-facebook-square social-icon fb-social"></i>
+              @handlefr
+            </span>
+          </div>
+          <div class="follower-container">
+            <h2 class="follower-total">1044</h2>
+            <h3 class="follower-text">FOLLOWERS</h3>
+          </div>
+          <h4 class="daily-total inc">
+            <i class="fas fa-caret-up"></i> 99 Today
+          </h4>
         </div>
-        <h4 class="daily-total inc">12 Today</h4>
+        <div class="main-card insta">
+          <div class="social-handle">
+            <span class="social-icon-text">
+              <i class="fab fa-instagram social-icon insta-social"></i>
+              @handlefr
+            </span>
+          </div>
+          <div class="follower-container">
+            <h2 class="follower-total">11k</h2>
+            <h3 class="follower-text">FOLLOWERS</h3>
+          </div>
+          <h4 class="daily-total inc">
+            <i class="fas fa-caret-up"></i> 1099 Today
+          </h4>
+        </div>
+        <div class="main-card yt">
+          <div class="social-handle">
+            <span class="social-icon-text">
+              <i class="fab fa-youtube social-icon yt-social"></i>
+              @handlefr
+            </span>
+          </div>
+          <div class="follower-container">
+            <h2 class="follower-total">8239</h2>
+            <h3 class="follower-text">FOLLOWERS</h3>
+          </div>
+          <h4 class="daily-total dec">
+            <i class="fas fa-caret-down"></i> 144 Today
+          </h4>
+        </div>
       </div>
-      <div class="main-card insta">
-        <div class="social-handle">
-          <span class="social-icon-text">
-            <i class="fab fa-instagram social-icon insta-social"></i>
-            @handlefr
-          </span>
+      <div class="overview-wrapper">
+        <h1 class="overview-wrapper-title">Overview - Today</h1>
+        <div class="grid-container">
+          <div class="overview-container">
+            <div class="left-overview">
+              <h3 class="left-overview-page-views">Page Views</h3>
+              <h3 class="left-overview-page-total">87</h3>
+            </div>
+            <div class="right-overview">
+              <i class="fab fa-facebook-square social-icon fb-social"></i>
+              <h4 class="daily-total inc">
+                <i class="fas fa-caret-up"></i> 144 Today
+              </h4>
+            </div>
+          </div>
+          <div class="overview-container">
+            <div class="left-overview">
+              <h3 class="left-overview-page-views">Likes</h3>
+              <h3 class="left-overview-page-total">52</h3>
+            </div>
+            <div class="right-overview">
+              <i class="fab fa-facebook-square social-icon fb-social"></i>
+              <h4 class="daily-total dec">
+                <i class="fas fa-caret-down"></i> 2%
+              </h4>
+            </div>
+          </div>
+          <div class="overview-container">
+            <div class="left-overview">
+              <h3 class="left-overview-page-views">Likes</h3>
+              <h3 class="left-overview-page-total">5462</h3>
+            </div>
+            <div class="right-overview">
+              <i class="fab fa-instagram social-icon insta-social"></i>
+              <h4 class="daily-total inc">
+                <i class="fas fa-caret-up"></i> 2257%
+              </h4>
+            </div>
+          </div>
+          <div class="overview-container">
+            <div class="left-overview">
+              <h3 class="left-overview-page-views">Likes</h3>
+              <h3 class="left-overview-page-total">52K</h3>
+            </div>
+            <div class="right-overview">
+              <i class="fab fa-instagram social-icon insta-social"></i>
+              <h4 class="daily-total inc">
+                <i class="fas fa-caret-up"></i> 1375%
+              </h4>
+            </div>
+          </div>
+
+          <div class="overview-container">
+            <div class="left-overview">
+              <h3 class="left-overview-page-views">Retweets</h3>
+              <h3 class="left-overview-page-total">117</h3>
+            </div>
+            <div class="right-overview">
+              <i class="fab fa-twitter social-icon fb-social"></i>
+              <h4 class="daily-total inc">
+                <i class="fas fa-caret-up"></i> 303%
+              </h4>
+            </div>
+          </div>
+          <div class="overview-container">
+            <div class="left-overview">
+              <h3 class="left-overview-page-views">Likes</h3>
+              <h3 class="left-overview-page-total">507</h3>
+            </div>
+            <div class="right-overview">
+              <i class="fab fa-twitter social-icon fb-social"></i>
+              <h4 class="daily-total inc">
+                <i class="fas fa-caret-up"></i> 533%
+              </h4>
+            </div>
+          </div>
+
+          <div class="overview-container">
+            <div class="left-overview">
+              <h3 class="left-overview-page-views">Likes</h3>
+              <h3 class="left-overview-page-total">107</h3>
+            </div>
+            <div class="right-overview">
+              <i class="fab fa-youtube social-icon yt-social"></i>
+              <h4 class="daily-total dec">
+                <i class="fas fa-caret-down"></i> 19%
+              </h4>
+            </div>
+          </div>
+          <div class="overview-container">
+            <div class="left-overview">
+              <h3 class="left-overview-page-views">Total Views</h3>
+              <h3 class="left-overview-page-total">140</h3>
+            </div>
+            <div class="right-overview">
+              <i class="fab fa-youtube social-icon yt-social"></i>
+              <h4 class="daily-total dec">
+                <i class="fas fa-caret-down"></i> 12%
+              </h4>
+            </div>
+          </div>
         </div>
-        <div class="follower-container">
-          <h2 class="follower-total">8239</h2>
-          <h3 class="follower-text">FOLLOWERS</h3>
-        </div>
-        <h4 class="daily-total inc">12 Today</h4>
-      </div>
-      <div class="main-card yt">
-        <div class="social-handle">
-          <span class="social-icon-text">
-            <i class="fab fa-youtube social-icon yt-social"></i>
-            @handlefr
-          </span>
-        </div>
-        <div class="follower-container">
-          <h2 class="follower-total">8239</h2>
-          <h3 class="follower-text">FOLLOWERS</h3>
-        </div>
-        <h4 class="daily-total inc">12 Today</h4>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
